@@ -1,0 +1,498 @@
+* {
+    right: 0;
+    margin: 0;
+    font-family: sans-serif;}
+/* Tags de helping */
+
+.brd-rds-5 {
+    border-radius: 10px;
+}
+.mrg-t-b-5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.mrg-t-b-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mrg-t-b-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mrg-l-r-5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.mrg-l-r-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mrg-l-r-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.pddng-10 {
+    padding: 10px;
+}
+.pddng-20 {
+    padding: 20px;
+}
+.just-center {
+    justify-content: center;
+}
+.img-ht-500 {
+    height: 500px;
+    width: auto;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.display-block {
+    display: block;
+}
+.bg-main-color {
+    padding: 10px;
+    background-image: linear-gradient(to left, #ffb2a1, #ff94b9);
+    height: 600px;
+    width: 100%;
+}
+
+.bg-button-color {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to left, #ffb2a1, #ff94b9);
+    height: fit-content;
+    width: 100px;
+    border-radius: 5px;
+}
+/* Fim das Tags de helping */
+
+
+body{
+    width: 100%;
+}
+
+/* Tags simples */
+body {
+    background-image: linear-gradient(to right, rgb(29, 36, 36), rgb(78, 78, 138));
+    justify-content: center;
+    display: row;
+}
+main {
+    justify-content: center;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background-color: aliceblue;
+}
+.footer-main-nav {
+    margin: 0;
+}
+.footer-main-nav ul {
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.footer-main-nav li {
+    margin-right: 20px;
+}
+.footer-main-nav a {
+    text-decoration: none;
+    color: #333;
+}
+.footer-menu-nav {
+    float: right;
+    justify-content: right;
+}
+
+/* Header Menu */
+header {
+    /* Adicione algum espaçamento interno para os elementos não ficarem colados nas bordas */
+    background-color: aliceblue;
+    width: 100%;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px; /* Adicionei um espaçamento à direita do logotipo */
+}
+
+/* Estilos para o menu de navegação */
+.navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.nav-menu {
+    position: relative; /* Adicione esta linha */
+    z-index: 1; /* Adicione esta linha */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 20px; /* Espaçamento entre os itens da lista */
+}
+
+.nav-item {
+    margin: 0;
+  }
+
+  /* Quando o mouse está sobre o nav-item, ajuste a altura e a opacidade da camada */
+
+  .nav-item:hover {
+    text-align: center;
+    background-color: #ffcce5; /* Cor de fundo desejada ao passar o mouse */
+    border-radius: 5px;
+    height: max-content;
+    transition: 0.5s;
+}
+
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+  }
+
+/* Estilos para o ícone do menu de hambúrguer */
+.hamburger {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px auto; /* Espaçamento vertical entre as barras do ícone */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Main Edit */
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.box-flex {
+    position: relative; /* Adicione esta linha */
+    border-radius: 5px;
+    background-color: #FF94B9;
+    display: flex;
+}
+.block-main {
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+}
+.main-box-text {
+    padding: 10px;
+}
+.box-text-02 {
+    padding: 20px;
+    margin-top: 60px;
+    text-align: left;
+    justify-self: auto;
+}
+
+.img-home-01 {
+    height: 400px;
+    width: auto;
+}
+
+.grid-layout-01-tst {
+    margin: 0 auto;
+    max-width: 800px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-img-01-tst{
+    grid-column: 2; /* Isso seleciona a coluna que eu quero que o obj esteja */
+    grid-row: 1/4; /* Isso seleciona de que linha até que linha ele vai estar, no ex:da linha 1 até a 3 */
+
+
+}
+.grid-redbubble {
+    padding: 100px 0;
+    align-items: center;
+
+    height: 400px;
+}
+
+
+/* Banner-home-img */
+.banner-home {
+    position: relative;
+    background-image: url("imgs/img-home-banners/img-home-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.banner-home h1 {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 54px;
+}
+.banner-home p {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.box-text-02 h1 {
+    font-size: 45px;
+    float: initial;
+    text-align: center;
+    justify-content: center;
+}
+.box-text-02 p {
+    font-size: 28px;
+    float: initial;
+    text-align: center;
+    justify-content: center;
+}
+.overlay-container {
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.overlay-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 88, 88); /* Cor de fundo semi-transparente */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease-in-out; /* Transição suave */
+    pointer-events: none; /* Garante que o overlay não afete interações com o conteúdo subjacente */
+    z-index: -1;
+}
+.overlay-container:hover::before {
+    background-color: #333;
+    opacity: 1; /* Torna o overlay visível ao passar o mouse */
+}
+
+/* Animação de zoom na imagem dinâmico */
+.zoom-image {
+    border-radius: 30px;
+    transition: transform 0.3s;
+}
+.zoom-image:hover {
+    transform: scale(1.1); /* Zoom de 10% */
+}
+.zoom-image-02 {
+    transition: transform 0.3s;
+}
+.zoom-image-02:hover {
+    transform: scale(1.07); /* Zoom de 10% */
+}
+.slide-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.slide-container-header {
+    background-color: #FF94B9;
+    border-radius: 5px;
+}
+
+/* Fim da Animação de zoom na imagem dinâmico */
+/* Slider container deslizante */
+.slide {
+    padding: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+.img-slide {
+    padding: 5px;
+    max-width: auto;
+    height: 500px;
+}
+/* Menu interativo em CSS */
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: relative;
+        top: 150px;
+        right: -115%;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        flex-direction: column;
+        background-color: aliceblue;
+        width: 100%; /* Adicione "%" para especificar a largura em relação ao elemento pai */
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 32px 0;
+    }
+    .nav-menu.active {
+        right: -25%;
+    }
+    /* Responsivo */
+    .nav-menu.active .hamburger:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-menu.active .hamburger:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-menu.active .hamburger:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+.display-block {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bg-main-color {
+    padding: 10px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.img-home-01 {
+    height: 300px;
+    width: auto;
+}
+.banner-home {
+    position: relative;
+    background-image: url("imgs/img-home-banners/img-home-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.banner-home h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 34px;
+}
+.banner-home p {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+section {
+    display: table-row;
+    text-align: center;
+    width: 100%;
+}
+
+.box-text-02 {
+    float: initial;
+    text-align: center;
+    justify-content: center;
+}
+.box-text-02 h1 {
+    font-size: 25px;
+    float: initial;
+    text-align: center;
+    justify-content: center;
+}
+.box-text-02 p {
+    font-size: 18px;
+    float: initial;
+    text-align: center;
+    justify-content: center;
+}
+.pddng-20 {
+    padding: 2px;
+}
+.float-left {
+    float: none;
+}
+.float-right {
+    float: none;
+    margin: 0;
+}
+.img-slide {
+    padding: 5px;
+    max-width: auto;
+    height: 300px;
+}
+.mrg-t-b-10 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mrg-t-b-5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.box-text-02 {
+    padding: 5px;
+    margin-top: 0;
+    text-align: left;
+    justify-self: auto;
+}
